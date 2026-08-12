@@ -10,6 +10,7 @@ import MarketsPage from "../pages/Markets/MarketsPage";
 import TradePage from "../pages/Trade/TradePage";
 import ActivityPage from "../pages/Activity/ActivityPage";
 import ProfilePage from "../pages/Profile/ProfilePage";
+import ForgotPassword from "../pages/Auth/ForgotPassword";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const AppRoutes = () => {
       <Route path="/trade" element={<TradePage />} />
       <Route path="/activity" element={<ActivityPage />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
     </Routes>
   );
 };
