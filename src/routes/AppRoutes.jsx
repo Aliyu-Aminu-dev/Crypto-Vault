@@ -11,23 +11,29 @@ import TradePage from "../pages/Trade/TradePage";
 import ActivityPage from "../pages/Activity/ActivityPage";
 import ProfilePage from "../pages/Profile/ProfilePage";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
+import OtpVerification from "../pages/Auth/OtpVerification";
+import CreatePassword from "../pages/Auth/CreatePassword";
+import PasswordChanged from "../pages/Auth/PasswordChanged";
 
 const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<SplashPage />} />
+    return (
+        <Routes>
+            <Route path="/" element={<SplashPage />} />
 
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
 
-      <Route path="/home" element={<HomePage />} />
-      <Route path="/markets" element={<MarketsPage />} />
-      <Route path="/trade" element={<TradePage />} />
-      <Route path="/activity" element={<ActivityPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
-      <Route path="/forgot-password" element={<ForgotPassword />} />
-    </Routes>
-  );
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/markets" element={<MarketsPage />} />
+            <Route path="/trade" element={<TradePage />} />
+            <Route path="/activity" element={<ActivityPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/verify-otp" element={<OtpVerification />} />
+            <Route path="/create-password" element={<CreatePassword />} />
+            <Route path="/password-changed" element={<PasswordChanged />} />
+        </Routes>
+    );
 };
 
 export default AppRoutes;
