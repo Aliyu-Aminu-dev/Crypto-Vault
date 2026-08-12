@@ -14,6 +14,9 @@ import ForgotPassword from "../pages/Auth/ForgotPassword";
 import OtpVerification from "../pages/Auth/OtpVerification";
 import CreatePassword from "../pages/Auth/CreatePassword";
 import PasswordChanged from "../pages/Auth/PasswordChanged";
+import CreatePin from "../pages/Auth/CreatePin";
+import ConfirmPin from "../pages/Auth/ConfirmPin";
+import BiometricSetup from "../pages/Auth/BiometricSetup";
 
 const AppRoutes = () => {
     return (
@@ -32,6 +35,10 @@ const AppRoutes = () => {
             <Route path="/verify-otp" element={<OtpVerification />} />
             <Route path="/create-password" element={<CreatePassword />} />
             <Route path="/password-changed" element={<PasswordChanged />} />
+
+            <Route path="/create-pin" element={<CreatePin />} />
+            <Route path="/confirm-pin" element={<ConfirmPin />} />
+            <Route path="/biometric-setup" element={<BiometricSetup />} />
         </Routes>
     );
 };

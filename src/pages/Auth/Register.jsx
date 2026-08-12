@@ -46,7 +46,7 @@ const Register = () => {
             return;
         }
 
-        navigate("/login");
+        navigate("/create-pin");
     };
 
     return (
