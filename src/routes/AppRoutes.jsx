@@ -39,6 +39,7 @@ const AppRoutes = () => {
             <Route path="/create-pin" element={<CreatePin />} />
             <Route path="/confirm-pin" element={<ConfirmPin />} />
             <Route path="/biometric-setup" element={<BiometricSetup />} />
+
         </Routes>
     );
 };
