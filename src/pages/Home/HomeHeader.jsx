@@ -18,7 +18,7 @@ const HomeHeader = () => {
         </div>
       </div>
 
-      <button className="w-10 h-10 rounded-full bg-[#101936] flex items-center justify-center relative">
+      <button className="w-10 h-10 rounded-full bg-[#131A2E] flex items-center justify-center relative">
         <Bell size={28} className="text-[#8190B5]" />
 
         <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-red-500"></span>

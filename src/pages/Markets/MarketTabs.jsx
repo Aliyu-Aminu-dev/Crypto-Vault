@@ -27,7 +27,7 @@ const MarketTabs = ({
             ${
               activeTab === tab
                 ? "bg-[#00E58F] text-black"
-                : "bg-[#111A39] text-[#8190B5]"
+                : "bg-[#131A2E] text-[#8190B5]"
             }
           `}
         >

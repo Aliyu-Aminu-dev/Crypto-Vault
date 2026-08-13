@@ -5,7 +5,7 @@ const BalanceCard = () => {
   const [showBalance, setShowBalance] = useState(true);
 
   return (
-    <div className="bg-[#111A39] rounded-[30px] p-6 mt-8 overflow-hidden">
+    <div className="bg-[#131A2E] rounded-[30px] p-6 mt-8 overflow-hidden">
       <div className="flex items-center gap-3">
         <span className="text-[#8190B5] text-[16px]">
           Your Overall Balance

@@ -37,7 +37,7 @@ const MarketsPage = () => {
         </div>
 
         {/* Search */}
-        <div className="mt-8 bg-[#111A39] h-[56px] rounded-2xl px-4 flex items-center gap-3">
+        <div className="mt-8 bg-[#131A2E] h-[56px] rounded-2xl px-4 flex items-center gap-3">
           <Search
             size={20}
             className="text-[#8190B5]"
@@ -57,7 +57,7 @@ const MarketsPage = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 mt-6">
-          <div className="bg-[#111A39] rounded-2xl p-4">
+          <div className="bg-[#131A2E] rounded-2xl p-4">
             <p className="text-[#8190B5] text-xs">
               Market Cap
             </p>
@@ -67,7 +67,7 @@ const MarketsPage = () => {
             </h3>
           </div>
 
-          <div className="bg-[#111A39] rounded-2xl p-4">
+          <div className="bg-[#131A2E] rounded-2xl p-4">
             <p className="text-[#8190B5] text-xs">
               BTC Dom.
             </p>
@@ -77,7 +77,7 @@ const MarketsPage = () => {
             </h3>
           </div>
 
-          <div className="bg-[#111A39] rounded-2xl p-4">
+          <div className="bg-[#131A2E] rounded-2xl p-4">
             <p className="text-[#8190B5] text-xs">
               Volume
             </p>

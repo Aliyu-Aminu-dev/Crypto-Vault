@@ -177,7 +177,7 @@ const TradePage = () => {
           <button
             type="button"
             onClick={() => setShowSlippageModal(true)}
-            className="w-12 h-12 rounded-full bg-[#111A39] flex items-center justify-center"
+            className="w-12 h-12 rounded-full bg-[#131A2E] flex items-center justify-center"
           >
             <Settings2 size={22} className="text-[#8190B5]" />
           </button>
@@ -191,7 +191,7 @@ const TradePage = () => {
               onClick={() => handleTabChange(tab)}
               className={`h-[50px] rounded-full font-semibold transition-all ${activeTab === tab
                 ? "bg-[#00E58F] text-black"
-                : "bg-[#111A39] text-[#8190B5]"
+                : "bg-[#131A2E] text-[#8190B5]"
                 }`}
             >
               {tab}
@@ -365,7 +365,7 @@ const TradePage = () => {
 
 const SwapAssetCard = ({ label, coin, amount, onAmountChange, onSelect, isReceive }) => {
   return (
-    <div className="bg-[#111A39] rounded-[28px] p-5">
+    <div className="bg-[#131A2E] rounded-[28px] p-5">
       <p className="text-[#8190B5] text-sm mb-4">{label}</p>
 
       <div className="flex items-center justify-between gap-4">
@@ -438,7 +438,7 @@ const BuySellCoinRow = ({ coin, selected, onClick }) => {
       onClick={onClick}
       className={`w-full rounded-[24px] p-4 flex items-center justify-between transition border ${selected
         ? "bg-[#13213F] border-[#00E58F]/50"
-        : "bg-[#111A39] border-transparent"
+        : "bg-[#131A2E] border-transparent"
         }`}
     >
       <div className="flex items-center gap-4">
@@ -476,7 +476,7 @@ const BuySellAmountCard = ({
   onAmountChange,
 }) => {
   return (
-    <div className="mt-6 bg-[#111A39] rounded-[28px] p-5">
+    <div className="mt-6 bg-[#131A2E] rounded-[28px] p-5">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0 flex-1">
           <p className="text-[#8190B5] text-sm">
@@ -519,7 +519,7 @@ const QuickAmountButtons = ({ onSelect }) => {
           key={item}
           type="button"
           onClick={() => onSelect(item)}
-          className="h-11 rounded-full bg-[#111A39] text-[#8190B5] font-semibold active:scale-[0.97] transition"
+          className="h-11 rounded-full bg-[#131A2E] text-[#8190B5] font-semibold active:scale-[0.97] transition"
         >
           {item}
         </button>
@@ -543,7 +543,7 @@ const TradeDetailsCard = ({
         : "text-[#FF4D6D]";
 
   return (
-    <div className="bg-[#111A39] rounded-[28px] p-5 mt-6 space-y-4">
+    <div className="bg-[#131A2E] rounded-[28px] p-5 mt-6 space-y-4">
       <InfoRow label="Exchange Rate" value={rate} />
       <InfoRow label="Estimated Network Fee" value={fee} />
       <InfoRow label="Max Slippage" value={`${slippage}%`} />
@@ -572,7 +572,7 @@ const PrimaryActionButton = ({ label, disabled, onClick }) => {
       onClick={onClick}
       disabled={disabled}
       className={`mt-8 w-full h-[58px] rounded-[18px] text-lg font-bold transition ${disabled
-        ? "bg-[#111A39] text-[#596582]"
+        ? "bg-[#131A2E] text-[#596582]"
         : "bg-[#00E58F] text-black active:scale-[0.98]"
         }`}
     >
@@ -591,20 +591,20 @@ const CoinSelectorModal = ({ coins, onClose, onSelect }) => {
 
   return (
     <div className="fixed inset-0 z-[100] bg-black/75 flex items-end justify-center">
-      <div className="w-full max-w-[430px] bg-[#08112D] rounded-t-[34px] p-5 pb-8">
+      <div className="w-full max-w-[430px] bg-[#131A2E] rounded-t-[34px] p-5 pb-8">
         <div className="flex items-center justify-between">
           <h2 className="text-white text-[22px] font-bold">Select Coin</h2>
 
           <button
             type="button"
             onClick={onClose}
-            className="w-10 h-10 rounded-full bg-[#111A39] flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-[#131A2E] flex items-center justify-center"
           >
             <X size={20} className="text-white" />
           </button>
         </div>
 
-        <div className="mt-5 bg-[#111A39] h-[52px] rounded-2xl px-4 flex items-center gap-3">
+        <div className="mt-5 bg-[#131A2E] h-[52px] rounded-2xl px-4 flex items-center gap-3">
           <Search size={18} className="text-[#8190B5]" />
 
           <input
@@ -621,7 +621,7 @@ const CoinSelectorModal = ({ coins, onClose, onSelect }) => {
               key={coin.id}
               type="button"
               onClick={() => onSelect(coin)}
-              className="w-full bg-[#111A39] rounded-[22px] p-4 flex items-center justify-between"
+              className="w-full bg-[#131A2E] rounded-[22px] p-4 flex items-center justify-between"
             >
               <div className="flex items-center gap-4">
                 <img src={coin.icon} alt={coin.name} className="w-10 h-10 rounded-full" />
@@ -646,7 +646,7 @@ const SlippageModal = ({ slippage, setSlippage, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[100] bg-black/75 flex items-end justify-center">
-      <div className="w-full max-w-[430px] bg-[#08112D] rounded-t-[34px] p-5 pb-8">
+      <div className="w-full max-w-[430px] bg-[#131A2E] rounded-t-[34px] p-5 pb-8">
         <div className="flex items-center justify-between">
           <h2 className="text-white text-[22px] font-bold">
             Slippage Settings
@@ -655,7 +655,7 @@ const SlippageModal = ({ slippage, setSlippage, onClose }) => {
           <button
             type="button"
             onClick={onClose}
-            className="w-10 h-10 rounded-full bg-[#111A39] flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-[#131A2E] flex items-center justify-center"
           >
             <X size={20} className="text-white" />
           </button>

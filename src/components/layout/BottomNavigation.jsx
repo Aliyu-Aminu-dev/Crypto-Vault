@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 const BottomNavigation = () => {
   return (
-    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] h-24 bg-[#08112d] rounded-t-[35px] flex items-center justify-around z-50">
+    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] h-24 bg-[#131A2E] rounded-t-[35px] flex items-center justify-around z-50">
       <NavLink to="/home">
         {({ isActive }) => (
           <div

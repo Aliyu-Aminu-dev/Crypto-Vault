@@ -7,7 +7,7 @@ const AssetCard = ({
   isNegative,
 }) => {
   return (
-    <div className="bg-[#111A39] rounded-[28px] p-6">
+    <div className="bg-[#131A2E] rounded-[28px] p-6">
       <div className="flex items-center justify-between mb-8">
         <img src={icon} alt={symbol} className="w-10 h-10"/>
 

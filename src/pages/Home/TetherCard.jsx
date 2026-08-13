@@ -2,7 +2,7 @@ import tether from "../../assets/images/tether.png";
 
 const TetherCard = () => {
   return (
-    <div className="bg-[#111A39] rounded-[28px] p-6 mt-4">
+    <div className="bg-[#131A2E] rounded-[28px] p-6 mt-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img src={tether} alt="cryptovault" className="mt-2 w-[40px] h-[40px]" />
